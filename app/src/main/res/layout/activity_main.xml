@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00062B"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@id/textLearnVern"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/baseline_bluetooth_24"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textLearnVern"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_above="@id/textBluetooth"
+        android:text="LearnVern"
+        android:textColor="#E64A19"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textBluetooth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btnTurnOnBluetooth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textBluetooth"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#F57C00"
+        android:text="Bluetooth Turn On"
+        android:textColor="#E5FFE6"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText,TextContrastCheck,UnusedAttribute" />
+
+    <Button
+        android:id="@+id/btnBluetoothDiscoverable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnTurnOnBluetooth"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#F57C00"
+        android:text="Bluetooth Discoverable"
+        android:textColor="#E5FFE6"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText,TextContrastCheck,UnusedAttribute" />
+
+    <Button
+        android:id="@+id/btnTurnOffBluetooth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnBluetoothDiscoverable"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#F57C00"
+        android:text="Bluetooth Turn Off"
+        android:textColor="#E5FFE6"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText,UnusedAttribute,TextContrastCheck" />
+</RelativeLayout>
