@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if(requestCode==REQUEST_ENABLE_BLUETOOTH){
+        if(resultCode==REQUEST_ENABLE_BLUETOOTH){
             if (bluetoothAdapter.isEnabled()){
                 bluetoothText.setText("Bluetooth Turned On");
             }
